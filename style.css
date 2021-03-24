@@ -39,7 +39,7 @@
 	background-image: url('bg.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: 100% 100%;
   }
   h2{
 	  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;

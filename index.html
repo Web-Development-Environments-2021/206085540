@@ -325,8 +325,7 @@ $(function(){
  <script>
    function sendMail() {
     var link = "mailto:" + encodeURIComponent(document.getElementById('email').value)
-             + "?cc=roypyp@gmail.com"
-             + "&subject=" + encodeURIComponent(document.getElementById('subject').value)
+             + "?subject=" + encodeURIComponent(document.getElementById('subject').value)
              + "&body=" + encodeURIComponent(document.getElementById('mailcontant').value);
     
     window.location.href = link;
