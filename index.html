@@ -270,11 +270,14 @@ $(function(){
  </script>
  <script>
    function sendMail() {
-    var link = "mailto:" + encodeURIComponent(document.getElementById('email').value)
+    var link = "mailto:" + encodeURIComponent(document.getElementById('email').value)+
              + "&subject=" + encodeURIComponent(document.getElementById('subject').value)
              + "&body=" + encodeURIComponent(document.getElementById('mailcontant').value)
     ;
-    
+    var link = "mailto:me@example.com"+
+             "?cc=CCaddress@example.com"+
+             "&subject=" + escape("This is subject")+
+             "&body=" + escape("This is body");
     window.location.href = link;
 }
  </script>
